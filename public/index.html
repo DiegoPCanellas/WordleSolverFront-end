@@ -4,14 +4,46 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <head>
+      <div id="menu" class="menu">
+        <h1>Wordle</h1>
+        <div class="line"></div>
+      </div>
+    </head>
+    <div class="centerScreen pt-3">
+      <div id="app"></div>
+    </div>
   </body>
+
+  <style>
+    body, html {
+      padding: 0;
+      margin: 0;
+      background-color: #121213;
+    }
+    .menu {
+      justify-content: center;
+      text-align: center;
+    }
+    .menu h1 {
+      color: white;
+    }
+    .centerScreen{
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
+    .line {
+      width: 100vw;
+      height: 1px;
+      border: 0.5px solid #3a3a3c;
+    }
+  </style>
 </html>
